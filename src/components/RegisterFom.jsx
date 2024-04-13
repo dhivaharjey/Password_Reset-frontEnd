@@ -26,7 +26,7 @@ const RegisterForm = () => {
       // e.prevantDefault();
       try {
         const response = await axios.post(
-          `http://forgot-password-backend-ac35.onrender.com/user/register`,
+          `https://forgot-password-backend-ac35.onrender.com/user/register`,
           values
         );
 
