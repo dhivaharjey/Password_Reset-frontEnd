@@ -18,7 +18,7 @@ const ResetPassword = () => {
     try {
       // const { token } = useParams();
       const response = await axios.get(
-        `http://forgot-password-backend-ac35.onrender.com/user/verify-token/${token}`
+        `https://forgot-password-backend-ac35.onrender.com/user/verify-token/${token}`
       );
       return response;
     } catch (error) {
@@ -41,7 +41,7 @@ const ResetPassword = () => {
     onSubmit: async (values) => {
       try {
         const response = await axios.post(
-          `http://forgot-password-backend-ac35.onrender.com/user/reset-password/${token}`,
+          `https://forgot-password-backend-ac35.onrender.com/user/reset-password/${token}`,
           values
         );
 

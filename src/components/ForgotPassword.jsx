@@ -22,7 +22,7 @@ const ForgotPassword = () => {
     onSubmit: async (values) => {
       try {
         const response = await axios.post(
-          `http://forgot-password-backend-ac35.onrender.com/user/forgot-password`,
+          `https://forgot-password-backend-ac35.onrender.com/user/forgot-password`,
           values
         );
 

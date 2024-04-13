@@ -7,7 +7,7 @@ import ForgotPassword from "./components/ForgotPassword";
 import ResetPassword from "./components/ResetPassword";
 import Dashboard from "./components/Dashboard";
 import { Toaster } from "react-hot-toast";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 function App() {
   return (
     <>
