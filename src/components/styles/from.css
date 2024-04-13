@@ -1,0 +1,15 @@
+.form {
+  background-color: rgb(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+body {
+  background-image: url("/1.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  border-radius: 2rem 2rem 0 0;
+}
+button:active {
+  transform: scale(0.9);
+}
