@@ -23,7 +23,6 @@ const LoginForm = () => {
       try {
         const response = await axios.post(`${url}/user/login`, values);
 
-        // setErr(res.data.message);
         if (response.data.status === true) {
           localStorage.setItem("Auth Token", response.data.token);
           toast.success(response.data.message);
@@ -44,7 +43,6 @@ const LoginForm = () => {
           <div className="form border p-5 rounded-5  col-sm-10 col-md-6 ">
             <h1 className="text-center mb-5 text-white">LOG IN</h1>
             <form onSubmit={handleSubmit}>
-              <p>{err}</p>
               <div className="form-floating mb-4">
                 <input
                   type="email"
