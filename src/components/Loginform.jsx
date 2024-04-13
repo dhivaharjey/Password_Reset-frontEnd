@@ -22,7 +22,7 @@ const LoginForm = () => {
     onSubmit: async (values) => {
       try {
         const response = await axios.post(
-          `https://forgot-password-backend-ac35.onrender.com/user/login`,
+          `http://forgot-password-backend-ac35.onrender.com/user/login`,
           values
         );
 
