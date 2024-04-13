@@ -21,7 +21,10 @@ const LoginForm = () => {
     validationSchema: signInValidation,
     onSubmit: async (values) => {
       try {
-        const response = await axios.post(`${url}/user/login`, values);
+        const response = await axios.post(
+          `http://forgot-password-backend-ac35.onrender.com/user/login`,
+          values
+        );
 
         if (response.data.status === true) {
           localStorage.setItem("Auth Token", response.data.token);

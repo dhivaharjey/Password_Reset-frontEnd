@@ -25,7 +25,10 @@ const RegisterForm = () => {
     onSubmit: async (values) => {
       // e.prevantDefault();
       try {
-        const response = await axios.post(`${url}/user/register`, values);
+        const response = await axios.post(
+          `http://forgot-password-backend-ac35.onrender.com/user/register`,
+          values
+        );
 
         if (response.data.status === true) {
           toast.success(response.data.message);
