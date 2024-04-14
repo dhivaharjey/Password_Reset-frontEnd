@@ -7,7 +7,7 @@ const Dashboard = () => {
   const logOut = () => {
     localStorage.removeItem("Auth Token");
     toast.success("you are logging out");
-    setInterval(() => {
+    setTimeout(() => {
       navigate("/");
     }, 1000);
   };
