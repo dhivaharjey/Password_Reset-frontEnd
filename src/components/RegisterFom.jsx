@@ -54,14 +54,14 @@ const RegisterForm = () => {
                 <input
                   type="text"
                   className="form-control"
-                  id="floatingInput1"
+                  id="floatingInput"
                   placeholder="name@example.com"
                   name="userName"
                   value={values.userName}
                   onChange={handleChange}
                   onBlur={handleBlur}
                 />
-                <label htmlFor="floatingInput1">UserName</label>
+                <label htmlFor="floatingInput">UserName</label>
                 {errors.userName && (
                   <div className="text-danger">{errors.userName}</div>
                 )}
@@ -70,13 +70,13 @@ const RegisterForm = () => {
                 <input
                   type="email"
                   className="form-control"
-                  id="floatingInput"
+                  id="floatingEmail"
                   placeholder="name@example.com"
                   name="email"
                   value={values.email}
                   onChange={handleChange}
                 />
-                <label htmlFor="floatingInput">Email address</label>
+                <label htmlFor="floatingEmail">Email address</label>
                 {errors.email && (
                   <div className="text-danger">{errors.email}</div>
                 )}
