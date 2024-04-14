@@ -54,14 +54,14 @@ const RegisterForm = () => {
                 <input
                   type="text"
                   className="form-control"
-                  id="floatingInput"
+                  id="floatingInput1"
                   placeholder="name@example.com"
                   name="userName"
                   value={values.userName}
                   onChange={handleChange}
                   onBlur={handleBlur}
                 />
-                <label for="floatingInput">UserName</label>
+                <label htmlFor="floatingInput1">UserName</label>
                 {errors.userName && (
                   <div className="text-danger">{errors.userName}</div>
                 )}
@@ -76,7 +76,7 @@ const RegisterForm = () => {
                   value={values.email}
                   onChange={handleChange}
                 />
-                <label for="floatingInput">Email address</label>
+                <label htmlFor="floatingInput">Email address</label>
                 {errors.email && (
                   <div className="text-danger">{errors.email}</div>
                 )}
@@ -96,7 +96,7 @@ const RegisterForm = () => {
                   onClick={togglePasswordVisibility}
                   className="fa-solid fa-eye-slash eye"
                 ></i>
-                <label for="floatingPassword">Password</label>
+                <label htmlFor="floatingPassword">Password</label>
                 {errors.password && (
                   <div className="text-danger">{errors.password}</div>
                 )}

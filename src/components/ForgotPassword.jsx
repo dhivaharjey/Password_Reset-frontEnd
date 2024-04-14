@@ -59,7 +59,7 @@ const ForgotPassword = () => {
                   onClick={togglePasswordVisibility}
                   className="fa-solid fa-eye-slash eye"
                 ></i>
-                <label for="floatingInput">Email address</label>
+                <label htmlFor="floatingInput">Email address</label>
                 {errors.email && (
                   <div className="text-danger">{errors.email}</div>
                 )}

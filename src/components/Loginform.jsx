@@ -56,7 +56,7 @@ const LoginForm = () => {
                   value={values.email}
                   onChange={handleChange}
                 />
-                <label for="floatingInput">Email address</label>
+                <label htmlFor="floatingInput">Email address</label>
                 {errors.email && (
                   <div className="text-danger">{errors.email}</div>
                 )}
