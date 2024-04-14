@@ -29,9 +29,9 @@ const LoginForm = () => {
         if (response.data.status === true) {
           localStorage.setItem("Auth Token", response.data.token);
           toast.success(response.data.message);
-          setTimeout(() => {
-            navigate("/dashboard");
-          }, 1000);
+          // setTimeout(() => {
+          navigate("/dashboard");
+          // }, 1000);
         }
       } catch (error) {
         toast.error(error.response.data.message);
