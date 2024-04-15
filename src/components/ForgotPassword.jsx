@@ -7,7 +7,6 @@ import { url } from "./URL";
 import axios from "axios";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-hot-toast";
-import "./styles/passwordVisibility.css";
 
 const ForgotPassword = () => {
   const navigate = useNavigate();
