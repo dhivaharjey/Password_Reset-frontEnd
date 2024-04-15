@@ -14,24 +14,24 @@ const ResetPassword = () => {
   const { token } = useParams();
   const navigate = useNavigate();
   const [invalidUser, setInvalidUser] = useState("");
-  const verifyToken = async () => {
-    try {
-      // const { token } = useParams();
-      const response = await axios.get(
-        `https://forgot-password-backend-ac35.onrender.com/user/verify-token/${token}`
-      );
-      return response;
-    } catch (error) {
-      // console.log(error);
-      if (error?.response?.data.status === false) {
-        setInvalidUser(error.response.data.message);
-      }
-    }
-  };
+  // const verifyToken = async () => {
+  //   try {
+  //     // const { token } = useParams();
+  //     const response = await axios.get(
+  //       `https://forgot-password-backend-ac35.onrender.com/user/verify-token/${token}`
+  //     );
+  //     return response;
+  //   } catch (error) {
+  //     // console.log(error);
+  //     if (error?.response?.data.status === false) {
+  //       setInvalidUser(error.response.data.message);
+  //     }
+  //   }
+  // };
 
-  useEffect(() => {
-    verifyToken();
-  }, []);
+  // useEffect(() => {
+  //   verifyToken();
+  // }, []);
 
   const { values, handleChange, handleSubmit, errors } = useFormik({
     initialValues: {
