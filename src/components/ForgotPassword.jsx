@@ -8,7 +8,6 @@ import axios from "axios";
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-hot-toast";
 import "./styles/passwordVisibility.css";
-import { togglePasswordVisibility } from "./Utils/togglePassword";
 
 const ForgotPassword = () => {
   const navigate = useNavigate();
@@ -55,10 +54,7 @@ const ForgotPassword = () => {
                   value={values.email}
                   onChange={handleChange}
                 />
-                <i
-                  onClick={togglePasswordVisibility}
-                  className="fa-solid fa-eye-slash eye"
-                ></i>
+
                 <label htmlFor="floatingInput">Email address</label>
                 {errors.email && (
                   <div className="text-danger">{errors.email}</div>
