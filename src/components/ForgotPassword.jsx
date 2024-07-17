@@ -18,12 +18,13 @@ const ForgotPassword = () => {
     initialValues: initialValues,
     validationSchema: forgetPasswordvalidation,
     onSubmit: async (values) => {
+      toast.warning("Wait few seconds");
       try {
         const response = await axios.post(
           `https://forgot-password-backend-ac35.onrender.com/user/forgot-password`,
           values
         );
-        toast.warning("Wait few seconds");
+
         if (response.data.status === true) {
           toast.success(response.data.message);
           setTimeout(() => {
