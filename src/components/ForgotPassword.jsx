@@ -24,7 +24,7 @@ const ForgotPassword = () => {
           `https://forgot-password-backend-ac35.onrender.com/user/forgot-password`,
           values
         );
-
+        console.log(response.data.status, response.data.message);
         if (response.data.status === true) {
           toast.success(response.data.message);
           setTimeout(() => {
